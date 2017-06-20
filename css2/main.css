@@ -1,0 +1,347 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+ font-family: 'Montserrat', sans-serif;
+ margin: 0;
+ padding: 0;
+}
+
+
+/* HEADER */
+
+
+h1{
+  font-size: 50px;
+  text-align: center;
+  color: black;
+  padding: 5px;
+  text-transform: uppercase;
+  margin-left: 13%;
+  margin-right: 10%;
+  border: 3px solid rgba(0,0,0,1);
+  font-weight: bold;
+}
+
+header {
+  margin: 0;
+  width: 100%;
+}
+
+header input {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    color: black;
+}
+
+header nav {
+  margin: 0;
+}
+
+.desktop {
+  display: none;
+}
+
+header ul {
+    background-color: #693E52;
+    color: white;
+    text-transform: uppercase;
+    text-align: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li{
+  display: inline-block;
+  font-size: 20px;
+  padding: 15px;
+  border-right: 1px solid rgba(255, 255, 255, 1);
+}
+
+header a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+
+header a:hover {
+  text-decoration: none;
+  color: grey;
+}
+
+
+/* FIN HEADER */
+
+
+
+/* SECTION N°1 : ARTICLES */
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 10%;
+}
+
+article{
+  width: 100%;
+  margin: 0;
+}
+
+img{
+width: 100%;
+border: 2px solid rgba(0, 0, 0, 0.8);
+}
+
+
+h2 {
+  font-family: 'Montserrat', 'Open Sans', 'Time New Roman', sans-serif;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  font-size: 40px;
+  margin: 0;
+
+
+}
+
+
+.btn {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+}
+
+.btn a{
+  font-size: 15px;
+  text-decoration: none;
+  color: #693E52;
+}
+
+.btn a:hover {
+  color: #337AB7;
+}
+
+
+p {
+  text-align: justify;
+}
+
+
+.row {
+  margin: 0;
+}
+
+
+/* FIN SECTION N°1 : ARTICLES */
+
+/* DEBUT SECTION N°2 : ARTICLES */
+
+
+
+
+
+
+
+/* FOOTER */
+
+footer {
+  background-color: black;
+
+}
+
+footer ul{
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li{
+  display: inline-block;
+  font-size: 50px;
+  text-align: center;
+  padding: 25px;
+}
+
+
+footer a{
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover{
+  color: grey;
+}
+
+/* FIN FOOTER*/
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+@media screen and (max-width :768px) {
+
+  footer ul li {
+    font-size: 180%
+  }
+
+}
+
+@media query (min-width: 1280px){
+
+  h1{
+    font-size: 50px;
+    text-align: center;
+    color: black;
+    padding: 5px;
+    text-transform: uppercase;
+    margin: 0;
+    position: absolute;
+    top: 95%;
+    left: 35%;
+    border: 3px solid rgba(0,0,0,1);
+  }
+
+  .container-fluid {
+    margin-top: 0%;
+  }
+
+  .row{
+  margin: 0;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
