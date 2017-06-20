@@ -79,6 +79,35 @@ header a:hover {
 
 
 /* FIN HEADER */
+
+
+/* FORM */
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  margin-bottom: 5%;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  width: 100%;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+
+
+/* FIN FORM */
+
 /* FOOTER */
 
 footer {
@@ -148,6 +177,14 @@ hr {
     top: 95%;
     left: 35%;
     border: 3px solid rgba(0,0,0,1);
+  }
+
+  p {
+
+  }
+
+  img {
+    width: 50%;
   }
 
 
