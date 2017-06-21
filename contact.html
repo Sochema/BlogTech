@@ -19,25 +19,17 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="contact.css">
   <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+  </script>
+
+  </script>
 </head>
 
 <body>
 
   <header>
-    <div class="pos-f-t d-lg-none">
-      <nav>
-        <ul>
-          <input type="text" name="search" placeholder="Rechercher..">
-          <li><a href="index.html" onclick=""><i class="fa fa-home" aria-hidden="true"></i></a></li>
-          <li><a href="decrypter.html">DECRYPTER</a></li>
-          <li><a href="neuf.html">NEUF</a></li>
-          <li><a href="lifetech.html">LIFETECH</a></li>
-          <li><a href="bibliotech.html">BIBLIOTECH</a></li>
-        </ul>
-      </nav>
-    </div>
 
-    <nav class="desktop d-lg-block">
+      <nav>
       <ul>
         <input type="text" name="search" placeholder="Rechercher..">
         <li><a href="index.html" onclick=""><i class="fa fa-home" aria-hidden="true"></i></a></li>
@@ -47,6 +39,7 @@
         <li><a href="bibliotech.html">BIBLIOTECH</a></li>
       </ul>
     </nav>
+
     <h1>BLOGTECH</h1>
   </header>
 
@@ -55,9 +48,10 @@
     <figure class="w-25">
     <img class="w-100" src="louisdefunes.jpg">
   </figure>
+
   <form>
     <div class="form-group">
-      <label for="usr">Name:</label>
+      <label for="usr"> Name:</label>
       <input type="text" class="form-control" id="usr">
     </div>
     <div class="form-group">
@@ -68,11 +62,11 @@
       <label for="comment">Comment:</label>
       <textarea class="form-control" rows="5" id="comment"></textarea>
     </div>
-    <button type="submit" class="btn btn-default">Submit</button>
+    <button type="submit" class="btn btn-default" onClick="return check() ">Submit</button>
   </form>
 </section>
 
-
+<div id='seconds-counter'> </div>
 
   <footer>
     <ul>
@@ -87,13 +81,17 @@
 
 
 
+ <script type="text/javascript" src="contact.html">
 
+
+ </script>
   <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
   <script>
     window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
   </script>
   <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <script src="contact.js"></script>
+
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
@@ -113,6 +111,7 @@
     ga('send', 'pageview');
   </script>
   <script src="js/bootstrap.js"></script>
+
 </body>
 
 </html>

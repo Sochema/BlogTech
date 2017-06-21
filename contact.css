@@ -97,11 +97,13 @@ img {
 }
 
 p {
+  display: flex;
+
   width: 100%;
   font-size: 30px;
   font-weight: bold;
-  text-align: left;
   text-transform: uppercase;
+  margin:0;
 }
 
 
