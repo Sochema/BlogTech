@@ -36,8 +36,6 @@ header {
 header input {
   width: 130px;
   margin: auto;
-  /*-webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;*/
   color: black;
 }
 

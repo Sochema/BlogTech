@@ -35,10 +35,9 @@ header {
 }
 
 header input {
-    width: 130px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-    color: black;
+  width: 130px;
+  margin: auto;
+  color: black;
 }
 
 header nav {
@@ -50,13 +49,21 @@ header nav {
 }
 
 header ul {
-    background-color: #693E52;
-    color: white;
-    text-transform: uppercase;
-    text-align: right;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #693E52;
+  color: white;
+  text-transform: uppercase;
+  text-align: right;
+  list-style: none;
+  margin: auto;
+  padding: 0;
+}
+
+header ul p {
+  float: left;
+  margin: auto;
+  text-align: center;
 }
 
 header ul li{
