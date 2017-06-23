@@ -17,7 +17,7 @@ body {
 /* HEADER */
 
 
-h1 {
+h1{
   font-size: 50px;
   text-align: center;
   color: black;
@@ -25,7 +25,7 @@ h1 {
   text-transform: uppercase;
   margin-left: 13%;
   margin-right: 10%;
-  border: 3px solid rgba(0, 0, 0, 1);
+  border: 3px solid rgba(0,0,0,1);
   font-weight: bold;
 }
 
@@ -66,7 +66,7 @@ header ul p {
   text-align: center;
 }
 
-header ul li {
+header ul li{
   display: inline-block;
   font-size: 20px;
   padding: 15px;
@@ -84,35 +84,101 @@ header a:hover {
   color: grey;
 }
 
-
-
 /* FIN HEADER */
 
-
-/* FORM */
+/* SECTION ARTICLE */
 
 section {
   display: flex;
-  justify-content: center;
-}
-
-form {
-  margin-bottom: 5%;
-}
-
-p {
-  display: flex;
+  flex-wrap: wrap;
   width: 100%;
-  font-size: 30px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: auto;
+}
 
+
+article{
+  width: 100%;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Montserrat', 'Open Sans', 'Time New Roman', sans-serif;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  font-size: 40px;
+  margin: 0;
+
+
+}
+
+img{
+width: 100%;
+border: 2px solid rgba(0, 0, 0, 0.8);
+}
+
+.btn {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+}
+
+.btn a{
+  font-size: 15px;
+  text-decoration: none;
+  color: #693E52;
+}
+
+.btn a:hover {
+  color: #337AB7;
+}
+
+p{
+  text-align: justify;
+}
+
+/* FIN ARTICLE */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* TABLEAU */
+
+.tab {
+  text-align: center;
+}
+
+.tablinks {
+  text-align: center;
+  font-size: 25px;
+  border-radius: 5%;
+}
+
+.tabcontent {
+  text-align: center;
+}
+
+.tabcontent img {
+  width: 50%;
 }
 
 
 
-/* FIN FORM */
+
+
+
+
+
+/* FIN TABLEAU */
+
+
 
 /* FOOTER */
 
@@ -145,34 +211,19 @@ footer a:hover{
   color: grey;
 }
 
+
 /* FIN FOOTER*/
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
 
 @media screen and (max-width :768px) {
-
   footer ul li {
-    font-size: 160%
+    font-size: 180%
   }
 }
 
 @media query (min-width: 1280px){
- .desktop {
-   display: block;
-  }
 
-  .pos-f-t{
-    display: none;
-  }
-
-  h1{
+  header h1{
     font-size: 50px;
     text-align: center;
     color: black;
@@ -185,13 +236,13 @@ hr {
     border: 3px solid rgba(0,0,0,1);
   }
 
-  p {
-
+  .container-fluid {
+    margin-top: 0%;
   }
 
-  img {
-    width: 50%;
-  }
+  .row{
+  margin: 0;
+}
 
 
 }

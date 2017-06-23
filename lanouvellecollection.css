@@ -16,18 +16,16 @@ body {
 
 /* HEADER */
 
-header{
-  height: 50px;
-}
-
-header h1{
-  font-size: 60px;
+h1 {
+  font-size: 50px;
   text-align: center;
   color: black;
   padding: 5px;
   text-transform: uppercase;
-  margin: 0;
-  position: absolute;
+  margin-left: 13%;
+  margin-right: 10%;
+  border: 3px solid rgba(0, 0, 0, 1);
+  font-weight: bold;
 }
 
 header {
@@ -36,27 +34,38 @@ header {
 }
 
 header input {
-    width: 130px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-    color: black;
+  width: 130px;
+  margin: auto;
+  color: black;
 }
 
-header nav{
+header nav {
   margin: 0;
 }
 
-header ul {
-    background-color: #693E52;
-    color: white;
-    text-transform: uppercase;
-    text-align: right;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.desktop {
+  display: none;
 }
 
-header ul li{
+header ul {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #693E52;
+  color: white;
+  text-transform: uppercase;
+  text-align: right;
+  list-style: none;
+  margin: auto;
+  padding: 0;
+}
+
+header ul p {
+  float: left;
+  margin: auto;
+  text-align: center;
+}
+
+header ul li {
   display: inline-block;
   font-size: 20px;
   padding: 15px;
@@ -75,17 +84,56 @@ header a:hover {
 }
 
 
+
+/* FIN HEADER */
+
+
+/* SECTION N°1 : ARTICLES */
+
+section {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+article {
+  width: 100%;
+  margin: 0;
+}
+
 img {
   width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.8);
+}
+
+h2 {
+  font-family: 'Montserrat', 'Open Sans', 'Time New Roman', sans-serif;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  font-size: 40px;
+  margin: 0;
+}
+
+p {
+  width: 100%;
+  text-align: justify;
+  font-size: 17px;
+
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 
-
-aside {
-  border: 1px solid rgba(255, 0, 0, 0.5);
-  float: right;
+form {
+  margin-bottom: 5%;
 }
-
 
 
 footer {
@@ -117,8 +165,31 @@ footer a:hover{
   color: grey;
 }
 
+
+
 @media screen and (max-width :768px) {
   footer ul li {
     font-size: 180%
+  }
+}
+
+@media query (min-width: 1280px) {
+  h1 {
+    font-size: 50px;
+    text-align: center;
+    color: black;
+    padding: 5px;
+    text-transform: uppercase;
+    margin: 0;
+    position: absolute;
+    top: 95%;
+    left: 35%;
+    border: 3px solid rgba(0, 0, 0, 1);
+  }
+  .container-fluid {
+    margin-top: 0%;
+  }
+  .row {
+    margin: 0;
   }
 }
