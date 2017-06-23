@@ -64,6 +64,11 @@ header ul p {
   float: left;
   margin: auto;
   text-align: center;
+  display: flex;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: auto;
+
 }
 
 header ul li {
@@ -100,15 +105,6 @@ form {
   margin-bottom: 5%;
 }
 
-p {
-  display: flex;
-  width: 100%;
-  font-size: 30px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: auto;
-
-}
 
 
 
